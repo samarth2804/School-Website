@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/img.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+nav img{
+    width: 100px;
+    height: 100px;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.text-box h1{
+    font-size: 50px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+nav .fa{
+    display:none;
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 16px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .nav-links ul li{
+        padding: 30px;
+    }
+
+}
+
+
+
+/*-------campus-------*/
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-pic{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+   
+}
+.img1{
+    
+    width: 100%;
+    height: auto;
+}
+.layer{
+    background-color: green;
+}
+
+/* Facilities*/
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.facility{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facility img{
+    width: 100%;
+    border-radius: 10px;
+}
+.facility p{
+    padding: 0;
+}
+.facility h2{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    padding-top: 50px;
+
+}
+@media(max-width:700px){
+    .cta h1{
+        font-size:15px;
+    }
+}
+
+
+/* footer */
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h3{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+
+/*-------about us page-------*/
+
+.sub-header1{
+    height: 50vh;
+    width: 100%;
+    background-image: url(images/about_banner.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.about-col img{
+    width:100% ;
+    height: auto;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.red-btn{
+    border: 1px solid #f44336;
+    background:transparent;
+    color: #f44336;
+}
+.red-btn:hover{
+    color: #fff;
+}
+
+/* admission */
+
+.sub-header2{
+    height: 50vh;
+    width: 100%;
+    background-image: url(images/admission-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.admission{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    font-size: 17px;
+}
+.container{
+    background-color: bisque;
+    padding: 5px 35px 15px 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="password"],
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid blueviolet;
+    margin: 5px;
+    border-radius: 5px;
+}
+fieldset{
+    background-color: white;
+    border: 1px solid blueviolet;
+    margin: 1px;
+    border-radius: 5px;
+
+}
+.main_heading{
+    text-align: center;
+}
+input[type="submit"]{
+    background-color:aqua;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+
+}
+input[type="submit"]:hover{
+    background-color: brown;
+
+}
+
+/* contact us*/
+.sub-header3{
+    height: 50vh;
+    width: 100%;
+    background-image: url(images/contact_img.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/school_logo.jpeg" alt=""></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>HNN Memorial Public School</h1>
+            <p>Knoweldge is the key to Suceed in life.</p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+
+
+    <section class="campus">
+        <h1> Our campus</h1>
+        <div class="campous-pic">
+            <img src="images/animated_school.jpg" class="img1">
+            <div class="layer">
+                <h3>Jamui</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <!-----Facilitites------>
+    <section class="facilities">
+        <h1>Our facilities</h1>
+        <div class="facility">
+            <img src="images/Teaching-Library.jpg" >
+            <h2>Library</h2>
+            <p>In my school library, We have various types of books - fictional, non-fictional, literature, books on general Knoweldge, etc. Books in my school library are arranged in such a way that students can find them easily.</p>
+        </div>
+        <div class="facility">
+            <img src="images/playground.jpg" >
+            <h2>Largest playground</h2>
+            <p>A playground, playpark, or play area is a place designed to provide an environment for children that facilitates play, typically outdoors.The school playground provides a safe outdoors environment within school that simulates the children to use their creative energy.</p>
+        </div>
+        <div class="facility">
+            <img src="images/cafeteria.jpg" >
+            <h2>Tasty and Healthy Food</h2>
+            <p>The kid's healthy eating plate is a visual guide to help educate and encourage children to eat well  and keep moving.</p>
+        </div>
+    </section>
+     
+
+    <!----- Call to action----->
+
+    <section class="cta">
+        <h1> Enroll here from Anywhere from the world</h1>
+        <a href="" class="hero-btn">Contact Us</a>
+    </section>
+    
+
+    <!----- Footer ----->
+
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>We provide high quailty education to prepare your kids for the future. We beleive that raising a child is a team effort. <br>With a strong team supporting them, every child can learn, be well, and thrive. <br>Our school's mission is to learn leadership, the common core, and the relationships for life and to provide safe and disciplined learning environment.</p>
+    </section>
+
+
+    <!---------Javascript for toggling menu-------------------------------------->
+    <script>
+        var navLinks = document.getElementById("nav-links");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

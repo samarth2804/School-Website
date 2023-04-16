@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header2">
+        <nav>
+            <a href="index.html"><img src="images/school_logo.jpeg" alt=""></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+    </section>
+    
+    <!--------admission----->
+    <section class="admission">
+        <h2>Fill the form for Admission.</h2>   
+        <div class="container">
+            <form action="form_handler.php" method="post">
+                <h1 class="main_heading">Admission form</h1>
+                <hr>
+                <p>Required fields are followed by: *</p>
+                
+                    <h2>Contat Information</h2>
+                    <p> Name:* <input type="text" name="name" placeholder="oom panday"required></p>
+                    <fieldset>
+                        <legend>Gender: </legend>
+                        Male <input type="radio" name="gender" id="male" value="M" required>
+                        Female <input type="radio" name="gender" id="female" value="F" required>
+                    </fieldset>
+                    <p>
+                        Date of Birth:* <input type="date">
+                    </p>
+                    <p>Email:* <input type="email" name="email" id="email" placeholder="Enter your email"required></p>
+                    <p>Pincode:* <input type="number" name="pincode" id="pincode" placeholder="Enter your pincode" required></p>
+                    <p>
+                       Address: 
+                       <textarea name="address" id="" cols="100" rows="10" placeholder="Enter your address"></textarea>
+                    </p>
+                    <h2>Payment Information</h2>
+                    <p>Card Type:*
+                        <select name="card type" id="card type" required>
+                            <option value="">-- select a card type--</option>
+                            <option value="rupay">rupay</option>
+                            <option value="visa">visa</option>
+                            <option value="mastercard">mastercard</option>
+                        </select>
+                    </p>
+                    <p>
+                        Card number* <input type="number" name="card_number" id="card_number" placeholder="Enter your card number"required>
+                    </p>
+                    <p>
+                        Expiration Date:* <input type="date" name="exp_date" id="exp_date" required>
+                    </p>
+                    <p>
+                        CVV * <input type="password" name="cvv" id="cvv" placeholder="Enter your cvv"required>
+                       
+                    </p>
+                <input type="submit" value="pay now">
+            </form>
+        </div>
+    </section>
+    
+
+
+    
+
+
+    <!---------Javascript for toggling menu-------------------------------------->
+    <script>
+        var navLinks = document.getElementById("nav-links");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

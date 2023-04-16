@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header1">
+        <nav>
+            <a href="index.html"><img src="images/school_logo.jpeg" alt=""></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    
+    <!--------about us content------->
+    <section class="about-us">
+        <div class="about-col">
+            <h1> We are the one of the best School </h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel voluptatem distinctio possimus, rem provident maxime odit nesciunt alias corrupti totam non a repellendus dolorem similique modi nostrum sed aut quod.</p>
+            <a href="" class="hero-btn red-btn"> EXPLORE NOW</a>
+        </div>
+
+        <div class="about-col">
+            <img src="images/about_pic.jpg" alt="">
+        </div>
+     
+    </section>
+
+
+    <!----- Footer ----->
+
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>We provide high quailty education to prepare your kids for the future. We beleive that raising a child is a team effort. <br>With a strong team supporting them, every child can learn, be well, and thrive. <br>Our school's mission is to learn leadership, the common core, and the relationships for life and to provide safe and disciplined learning environment.</p>
+    </section>
+
+
+    <!---------Javascript for toggling menu-------------------------------------->
+    <script>
+        var navLinks = document.getElementById("nav-links");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
